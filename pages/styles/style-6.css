@@ -1,40 +1,20 @@
 /* style-6.css */
+
+/* Цель: “шапка” сверху (1), слева высокий сайдбар (2), справа высокий сайдбар (3),
+   две широкие карточки (19, 20), одна высокая карточка (16) */
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 20px;
+
+  /* TODO:
+    1) 7 колонок, 5 строк
+    2) gap: 20px
+  */
 }
 
-/* header */
-.cell-1 {
-  grid-column: 1 / -1;
-  grid-row: 1;
-}
-
-/* left sidebar */
-.cell-2 {
-  grid-column: 1;
-  grid-row: 2 / -1;
-}
-
-.cell-16 {
-  grid-row: 4 / 6;
-  grid-column: 4 / 5;
-}
-
-.cell-19 {
-  grid-column: 2 / 4;
-}
-
-.cell-20 {
-  grid-column: 5 / 7;
-}
-
-/* right sidebar */
-.cell-3 {
-  grid-column: 7;
-  grid-row: 2 / -1;
-}
-
-/* остальные (4..20) автоматически заполнят центр (cols 2..6, rows 2..5) */
+/* 
+  Может понадобиться:
+   - grid-area (row-start / col-start / row-end (или span) / col-end (или span)) 
+   - или grid-column / grid-row (включая span)
+   - или grid-column-start / grid-row-start 
+*/

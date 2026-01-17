@@ -1,35 +1,28 @@
 /* style-8.css */
+
+/* Цель:
+  - элементы центрированы 
+  - 4 угловых элемента прижаты к углам ячейки (start/start, end/start, ...).
+*/
+
+/* 
+Может понадобиться:
+  - place-content
+  - place-items
+  - justify-self
+  - align-self
+*/
+
+/* style-10.css */
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 140px);
   grid-template-rows: repeat(4, 110px);
   gap: 20px;
-
-  /* чтобы было куда “центрировать” */
   width: 100%;
   min-height: 80vh;
-
-  place-content: center; /* центрируем сам грид внутри контейнера */
-  place-items: center; /* центрируем элементы внутри ячеек */
 }
 .cell {
   min-width: 50px;
   aspect-ratio: 1 / 1;
-}
-/* углы */
-.cell-1 {
-  justify-self: start;
-  align-self: start;
-}
-.cell-5 {
-  justify-self: end;
-  align-self: start;
-}
-.cell-16 {
-  justify-self: start;
-  align-self: end;
-}
-.cell-20 {
-  justify-self: end;
-  align-self: end;
 }

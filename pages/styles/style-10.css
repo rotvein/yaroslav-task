@@ -1,80 +1,18 @@
 /* style-10.css */
+
+/* Цель: растянуть ячейку 1 на весь экран, остальные ячейки идут по порядку*/
+
 .grid {
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 20px;
 }
 .cell {
   background-color: rgb(11, 0, 171);
 }
-
-/* Подложка */
 .cell-1 {
-  grid-area: 1 / 1 / -1 / -1; /* на всю сетку */
   opacity: 0.5;
   background-color: rgb(255, 255, 255);
   color: black;
-}
-
-/* Явно кладём 2..20 в “обычную” 5x4 раскладку (как в первом задании) */
-.cell-2 {
-  grid-area: 1 / 2;
-}
-.cell-3 {
-  grid-area: 1 / 3;
-}
-.cell-4 {
-  grid-area: 1 / 4;
-}
-.cell-5 {
-  grid-area: 1 / 5;
-}
-
-.cell-6 {
-  grid-area: 2 / 1;
-}
-.cell-7 {
-  grid-area: 2 / 2;
-}
-.cell-8 {
-  grid-area: 2 / 3;
-}
-.cell-9 {
-  grid-area: 2 / 4;
-}
-.cell-10 {
-  grid-area: 2 / 5;
-}
-
-.cell-11 {
-  grid-area: 3 / 1;
-}
-.cell-12 {
-  grid-area: 3 / 2;
-}
-.cell-13 {
-  grid-area: 3 / 3;
-}
-.cell-14 {
-  grid-area: 3 / 4;
-}
-.cell-15 {
-  grid-area: 3 / 5;
-}
-
-.cell-16 {
-  grid-area: 4 / 1;
-}
-.cell-17 {
-  grid-area: 4 / 2;
-}
-.cell-18 {
-  grid-area: 4 / 3;
-}
-.cell-19 {
-  grid-area: 4 / 4;
-}
-.cell-20 {
-  grid-area: 4 / 5;
 }

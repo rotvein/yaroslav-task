@@ -1,41 +1,19 @@
 /* style-3.css */
+
+/* Цель: 5x4, но во 2-й и 4-й строке порядок ячеек наоборот. */
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 20px;
 }
 
-/* 10 9 8 7 6 */
-.cell-6 {
-  grid-area: 2 / 5;
-}
-.cell-7 {
-  grid-area: 2 / 4;
-}
-.cell-8 {
-  grid-area: 2 / 3;
-}
-.cell-9 {
-  grid-area: 2 / 2;
-}
-.cell-10 {
-  grid-area: 2 / 1;
-}
+/* TODO 
+  Разверни элементы 6–10 во 2-й строке, и 16–20 в 4-й строке.
 
-/* 20 19 18 17 16 */
-.cell-16 {
-  grid-area: 4 / 5;
-}
-.cell-17 {
-  grid-area: 4 / 4;
-}
-.cell-18 {
-  grid-area: 4 / 3;
-}
-.cell-19 {
-  grid-area: 4 / 2;
-}
-.cell-20 {
-  grid-area: 4 / 1;
-}
+  Может понадобиться:
+   - grid-area (row-start / col-start / row-end / col-end)
+   - или grid-column / grid-row
+   - или grid-column-start / grid-row-start
+
+  Надо переопределить позицию 10 элементов, у которых обратный порядок,
+  остальные пусть размещаются автоматически.
+*/

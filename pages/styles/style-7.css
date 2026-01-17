@@ -1,23 +1,38 @@
 /* style-7.css */
+
+/* Цель: layout через grid-template-areas. */
+
+/* 
+Пример:
+
 .grid {
-  gap: 20px;
-  grid-template-areas:
-    "header header header header"
-    "sidebar main main main"
-    "sidebar main main main"
-    "footer footer footer footer";
+  grid-template-areas: 
+  "a a a a"
+  "b b b b"
+  "c c d d"
+  "c c d d"
 }
 
-/* areas */
 .cell-1 {
-  grid-area: header;
+  grid-area: a;
 }
+
 .cell-2 {
-  grid-area: main;
+  grid-area: b;
 }
+
 .cell-3 {
-  grid-area: sidebar;
+  grid-area: c;
 }
+
 .cell-4 {
-  grid-area: footer;
+  grid-area: d;
+}
+
+*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repear(4, 1fr);
+  gap: 20px;
 }

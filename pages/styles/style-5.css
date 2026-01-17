@@ -1,23 +1,21 @@
 /* style-5.css */
+
+/* Цель: сверху header (1) на всю ширину, снизу footer (20) на всю ширину,
+   внизу по центру 17–19 (а остальное заполняется “карточками”). */
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 20px;
+
+  /* TODO:
+    1) 5 колонок
+    2) 6 строк
+    3) gap: 20px
+  */
 }
 
-/* header */
-.cell-1 {
-  grid-column: 1 / -1;
-  grid-row: 1;
-}
-
-.cell-17 {
-  grid-column-start: 2;
-}
-
-/* footer */
-.cell-20 {
-  grid-column: 1 / -1;
-  grid-row: 6;
-}
+/* 
+  Может понадобиться:
+   - grid-area (row-start / col-start / row-end (или span) / col-end (или span)) 
+   - или grid-column / grid-row (включая span)
+   - или grid-column-start / grid-row-start 
+*/

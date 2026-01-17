@@ -1,7 +1,9 @@
 /* style-1.css */
 
+/* Цель: обычная сетка 5x4, элементы одинакового размера, гэп 10 пикселей*/
+
+/* Могут понадобиться grid-template-columns, grid-template-rows */
+
 .grid {
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
+  display: grid;
 }
