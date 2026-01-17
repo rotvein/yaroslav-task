@@ -1,0 +1,11 @@
+/* style-9.css */
+.grid {
+  display: grid;
+  gap: 20px;
+
+  /* Адаптивные колонки: сжимаются до 160px, дальше растут */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+  /* чтобы карточки выглядели ровно по высоте */
+  grid-auto-rows: 120px;
+}

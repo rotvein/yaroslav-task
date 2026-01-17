@@ -1,0 +1,23 @@
+/* style-7.css */
+.grid {
+  gap: 20px;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+/* areas */
+.cell-1 {
+  grid-area: header;
+}
+.cell-2 {
+  grid-area: main;
+}
+.cell-3 {
+  grid-area: sidebar;
+}
+.cell-4 {
+  grid-area: footer;
+}

@@ -1,0 +1,23 @@
+/* style-5.css */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+}
+
+/* header */
+.cell-1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.cell-17 {
+  grid-column-start: 2;
+}
+
+/* footer */
+.cell-20 {
+  grid-column: 1 / -1;
+  grid-row: 6;
+}
